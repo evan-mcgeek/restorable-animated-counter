@@ -46,7 +46,7 @@ class _AnimatedRestorableCounterState extends State<AnimatedRestorableCounter>
         _buttonIsPressed = false;
         _animationController.forward(from: 0);
         _color = _green;
-        Future.delayed(Duration(milliseconds: 900), () {
+        Future.delayed(Duration(milliseconds: 950), () {
           _counter.value++;
           _color = _white;
         });
@@ -59,7 +59,7 @@ class _AnimatedRestorableCounterState extends State<AnimatedRestorableCounter>
           _counter.value++;
           _color = _green;
         });
-        Future.delayed(Duration(milliseconds: 900), () {
+        Future.delayed(Duration(milliseconds: 950), () {
           _color = _white;
         });
       }
@@ -78,7 +78,7 @@ class _AnimatedRestorableCounterState extends State<AnimatedRestorableCounter>
         _buttonIsPressed = true;
         _animationController.forward(from: 0);
         _color = _red;
-        Future.delayed(Duration(milliseconds: 900), () {
+        Future.delayed(Duration(milliseconds: 950), () {
           _counter.value--;
           _color = _white;
         });
@@ -91,7 +91,7 @@ class _AnimatedRestorableCounterState extends State<AnimatedRestorableCounter>
           _counter.value--;
           _color = _red;
         });
-        Future.delayed(Duration(milliseconds: 900), () {
+        Future.delayed(Duration(milliseconds: 950), () {
           _color = _white;
         });
       }
